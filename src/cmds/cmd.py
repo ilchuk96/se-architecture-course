@@ -12,17 +12,16 @@ def exit(parameters, input_stream, output_stream, env):
 def wc(parameters, input_stream, output_stream, env):
 
     def print_info(text):
-        print(text)
         print("{} {} {}".format(
-                                len(text.split('\n')),
+                                len(text.split('\n')) - 1,
                                 len(text.split(' ')),
-                                len(text)),
+                                len(text) - 1),
               file=output_stream
         )
 
     if parameters:
         for name_file, quote in parameters:
-            with open(name_file, 't') as file_in:
+            with open(name_file, 'r') as file_in:
                 text = file_in.read()
                 print_info(text)
     else:

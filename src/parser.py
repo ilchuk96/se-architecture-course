@@ -1,7 +1,6 @@
 from expander import Expander
 from models import TextQuote
 from models.cmd import Cmd, MetaCmd
-from splitter import Splitter
 
 
 class Parser:

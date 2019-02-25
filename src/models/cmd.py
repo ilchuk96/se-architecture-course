@@ -56,6 +56,7 @@ class MetaCmd:
         self.first_cmd.output_stream = stream
         self.second_cmd.input_stream = stream
         self.first_cmd.run()
+        stream.seek(0)
         self.second_cmd.run()
 
     def __eq__(self, other):
