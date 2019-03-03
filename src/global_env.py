@@ -1,4 +1,5 @@
 from cmds.cmd import *
+from cmds.grep import Grep
 from cmds.internal_cmd import _nothing, _assignment_operator
 
 DICT_OF_CMDS = {
@@ -7,6 +8,7 @@ DICT_OF_CMDS = {
     'echo': echo,
     'wc': wc,
     'pwd': pwd,
+    'grep': Grep(),
     '_assignment_operator': _assignment_operator,
     '_nothing': _nothing
 }

@@ -1,5 +1,6 @@
 from environment import Environment
 from parser import *
+from settings import SETTINGS
 
 
 class App:
@@ -25,7 +26,10 @@ class App:
 
 
 if __name__ ==  "__main__":
-    try:
+    if SETTINGS['DEBUG']:
         App().run()
-    except:
-        print("Something wrong")
+    else:
+        try:
+            App().run()
+        except:
+            print("Something wrong")

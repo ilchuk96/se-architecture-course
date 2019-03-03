@@ -32,3 +32,4 @@ def wc(parameters, input_stream, output_stream, env):
 def pwd(parameters, input_stream, output_stream, env):
     import os
     print(os.getcwd(), file=output_stream)
+
