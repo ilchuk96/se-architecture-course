@@ -7,6 +7,8 @@ DICT_OF_CMDS = {
     'echo': echo,
     'wc': wc,
     'pwd': pwd,
+    'cd': cd,
+    'ls': ls,
     '_assignment_operator': _assignment_operator,
     '_nothing': _nothing
 }
